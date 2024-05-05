@@ -1,0 +1,10 @@
+from collections import Counter
+
+def count_word_occurrences(sentence):
+    words = sentence.split()
+    return Counter(words)
+
+# Example usage:
+sentence = "My name is Malvika . Malvika like data engineering. She work on data pipeline."
+word_occurrences = count_word_occurrences(sentence)
+print("Word occurrences:", word_occurrences)
